@@ -111,6 +111,12 @@
     color: #444444;
 }
 
+.descricao-video img {
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+}
+
 /* Rodapé */
 
 .rodape__container {
@@ -223,4 +229,3 @@
     }
 
 }
-

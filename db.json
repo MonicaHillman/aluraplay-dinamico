@@ -1,0 +1,116 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "titulo": "Conhecendo a linguagem Go | Hipsters.Talks",
+      "descricao": "3 mil visualizações - Há 3 meses",
+      "url": "https://www.youtube.com/embed/y8FeZMv37WU",
+      "imagem": "https://raw.githubusercontent.com/luanalvesdev/aluraplay/main/img/videos/Ellipse%2011.png"
+    },
+    {
+      "id": 2,
+      "titulo": "Desmistificando mobile - Linguagens e Frameworks",
+      "descricao": "1,5 mil visualizações - Há 2 meses",
+      "url": "https://www.youtube.com/embed/fmu1LQvZhms",
+      "imagem": "https://raw.githubusercontent.com/luanalvesdev/aluraplay/main/img/videos/Ellipse%2011.png"
+    },
+    {
+      "id": 3,
+      "titulo": "Orientação a objetos com Roberta Arcoverde | #Hipster...",
+      "descricao": "30 mil visualizações - Há 3 meses",
+      "url": "https://www.youtube.com/embed/jpuJ1qrluoU",
+      "imagem": "https://raw.githubusercontent.com/luanalvesdev/aluraplay/main/img/videos/Ellipse%2011.png"
+    },
+    {
+      "id": 4,
+      "titulo": "Linguagens e ferramentas usadas em Ciência de Dados...",
+      "descricao": "2,5 mil visualizações - Há 9 dias",
+      "url": "https://www.youtube.com/embed/h83e1aAM5xQ",
+      "imagem": "https://raw.githubusercontent.com/luanalvesdev/aluraplay/main/img/videos/Ellipse%2011.png"
+    },
+    {
+      "id": 5,
+      "titulo": "Reencontrando a paixão por programar: Beatriz Ramerindo",
+      "descricao": "1,2 mil visualizações - Há 1 mês",
+      "url": "https://www.youtube.com/embed/CnB3eLTrkn4",
+      "imagem": "https://raw.githubusercontent.com/luanalvesdev/aluraplay/main/img/videos/Ellipse%2011.png"
+    },
+    {
+      "id": 6,
+      "titulo": "Híbridos: Flutter e React Native | Desmistificando..",
+      "descricao": "1,6 mil visualizações - Há 1 mês",
+      "url": "https://www.youtube.com/embed/vf9P_PycgRw",
+      "imagem": "https://raw.githubusercontent.com/luanalvesdev/aluraplay/main/img/videos/Ellipse%2011.png"
+    },
+    {
+      "id": 7,
+      "titulo": "Data Science na prática- com Jéssika Ribeiro do Grupo...",
+      "descricao": "3,2 mil visualizações - Há 7 dias",
+      "url": "https://www.youtube.com/embed/Nts3P35mHzE",
+      "imagem": "https://raw.githubusercontent.com/luanalvesdev/aluraplay/main/img/videos/Ellipse%2011.png"
+    },
+    {
+      "id": 8,
+      "titulo": "baNaNa | Memes do JavaScript #2",
+      "descricao": "1,2 mil visualizações - Há 5 dias",
+      "url": "https://www.youtube.com/embed/HBVCsBtsmzA",
+      "imagem": "https://raw.githubusercontent.com/luanalvesdev/aluraplay/main/img/videos/Ellipse%2011.png"
+    },
+    {
+      "id": 9,
+      "titulo": "Aniversário da Casa do Código | 10 anos da sua editora de...",
+      "descricao": "1,3 mil visualizações - Há 1 mês",
+      "url": "https://www.youtube.com/embed/SyEdlBSw11k",
+      "imagem": "https://raw.githubusercontent.com/luanalvesdev/aluraplay/main/img/videos/Ellipse%2011.png"
+    },
+    {
+      "id": 10,
+      "titulo": "Jetpack Compose: Estados e animações",
+      "descricao": "1,6 mil visualizações - Há 8 dias",
+      "url": "https://www.youtube.com/embed/FKYBCl_I9zU",
+      "imagem": "https://raw.githubusercontent.com/luanalvesdev/aluraplay/main/img/videos/Ellipse%2011.png"
+    },
+    {
+      "id": 11,
+      "titulo": "[Casa do Código] Lançamento do Livro Certificação Linux",
+      "descricao": "1,2 mil visualizações - Há 1 mês",
+      "url": "https://www.youtube.com/embed/68EGCA67g_A",
+      "imagem": "https://raw.githubusercontent.com/luanalvesdev/aluraplay/main/img/videos/Ellipse%2011.png"
+    },
+    {
+      "id": 12,
+      "titulo": "Por que o JavaScript é assim? | Memes JavaScript #01",
+      "descricao": "2,3 mil visualizações - Há 2 dias",
+      "url": "https://www.youtube.com/embed/VHxoyduIt18",
+      "imagem": "https://raw.githubusercontent.com/luanalvesdev/aluraplay/main/img/videos/Ellipse%2011.png"
+    },
+    {
+      "titulo": "Imersão Java",
+      "descricao": "5 visualizações",
+      "url": "https://www.youtube.com/watch?v=WdT90ffB-0Q",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 13
+    },
+    {
+      "titulo": "Imersão Java",
+      "descricao": "2 visualizações",
+      "url": "https://www.youtube.com/watch?v=WdT90ffB-0Q",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 14
+    },
+    {
+      "titulo": "Imersão Java",
+      "descricao": "1 visualizações",
+      "url": "https://www.youtube.com/watch?v=WdT90ffB-0Q",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 15
+    },
+    {
+      "titulo": "Imersão Java",
+      "descricao": "1 visualizações",
+      "url": "https://www.youtube.com/watch?v=WdT90ffB-0Q",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 16
+    }
+  ]
+}
