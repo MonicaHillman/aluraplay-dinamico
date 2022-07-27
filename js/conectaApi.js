@@ -1,13 +1,12 @@
 async function listaVideos() {
-
     const conexao = await fetch("http://localhost:3000/videos");
     const conexaoConvertido = await conexao.json();
-
     return conexaoConvertido;
 }
 
 async function criaVideos(url, titulo, visualizacao, imagem) {
-    const conexao = fetch('http://localhost:3000/videos', {
+
+    const conexao = await fetch('http://localhost:3000/videos', {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -19,7 +18,9 @@ async function criaVideos(url, titulo, visualizacao, imagem) {
             imagem: imagem
         }),
     })
-
+    if (!conexao.ok) {
+        throw new Error('Não foi possível enviar o vídeo.')
+    }
     const conexaoConvertido = await conexao.json();
     return conexaoConvertido;
 }

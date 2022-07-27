@@ -22,11 +22,14 @@ function constroiCard(url, titulo, imagem, descricao) {
 const containerVideos = document.querySelector("[data-lista]");
 
 async function listaVideos() {
-    const lista = await conectaApi.listaVideos();
-
-    lista.forEach(elemento => {
-        containerVideos.appendChild(constroiCard(elemento.url, elemento.titulo, elemento.imagem, elemento.descricao))
-    });
+    try {
+        const lista = await conectaApi.listaVideos();
+        lista.forEach(elemento => {
+            containerVideos.appendChild(constroiCard(elemento.url, elemento.titulo, elemento.imagem, elemento.descricao))
+        });
+    } catch {
+        containerVideos.innerHTML = "<h2 class='mensagem__titulo'>Não foi possível carregar os vídeos da página.</h2>"
+    }
 }
 
 listaVideos();

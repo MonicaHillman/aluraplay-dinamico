@@ -1,5 +1,8 @@
 .container {
-    padding: 153px 20px 10px 20vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .container__formulario {
@@ -12,8 +15,7 @@
 }
 
 .formulario__campo {
-    display: flex;
-    flex-direction: column;
+    margin: 1em;
 }
 
 .formulario__titulo {
@@ -22,14 +24,10 @@
     font-size: 21px;
 }
 
-.formulario__campo {
-    margin: 1em;
-}
-
 .campo__escrita {
     width: 50vw;
-
     border-radius: 24px;
+    display: block;
     color: black;
     padding: 1em
 }
@@ -42,7 +40,7 @@
 }
 
 .formulario__botao {
-    padding: 1em;
+    padding: 1em 3em;
     margin: 2em 0;
     border-radius: 24px;
     background-color: var(--azul-escuro);

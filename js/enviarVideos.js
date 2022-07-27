@@ -18,10 +18,13 @@ formulario.addEventListener("submit", (evento) => {
     }
 
     enviarVideos(lista);
-    window.location.href = '../envio-concluido.html';
+
 });
 
 async function enviarVideos(lista) {
-    await conectaApi.criaVideos(lista.url, lista.titulo, lista.visualizacao, lista.imagem);
-
+    try {
+        await conectaApi.criaVideos(lista.url, lista.titulo, lista.visualizacao, lista.imagem);
+    } catch (e) {
+        alert(e)
+    }
 }
