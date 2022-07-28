@@ -15,11 +15,17 @@
 
 <body>
 
-    <!-- Cabecalho -->
     <header>
 
         <nav class="cabecalho">
             <a class="logo" href="./index.html"></a>
+
+            <div class="cabecalho__pesquisar">
+
+                <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input" data-pesquisa>
+                <button class="pesquisar__botao" data-pesquisa-botao>
+
+            </div>
 
             <div class="cabecalho__icones">
                 <a href="/enviar-video.html" class="cabecalho__videos"></a>
@@ -27,8 +33,6 @@
         </nav>
 
     </header>
-
-    <!-- Vídeos -->
 
     <ul class="videos__container" alt="videos alura" data-lista>
         <!-- <li class="videos__item">
@@ -78,9 +82,8 @@
         -->
     </ul>
 
-    <!-- <Seção rodapé> -->
-
     <script type="module" src="./js/mostrarVideos.js"></script>
+
 </body>
 
 </html>

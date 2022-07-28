@@ -1,7 +1,11 @@
 import { conectaApi } from "./conectaApi.js";
 
+const containerVideos = document.querySelector("[data-lista]");
+
+// Função de construção de card dinâmico
+
 function constroiCard(url, titulo, imagem, descricao) {
-    const video = document.createElement('li');
+    let video = document.createElement('li');
     video.className = "videos__item";
     video.innerHTML = `
         <iframe width="100%" height="72%" src="${url}"
@@ -19,11 +23,12 @@ function constroiCard(url, titulo, imagem, descricao) {
 
 }
 
-const containerVideos = document.querySelector("[data-lista]");
+
+// Função que puxa a API listando todo os vídeos
 
 async function listaVideos() {
     try {
-        const lista = await conectaApi.listaVideos();
+        let lista = await conectaApi.listaVideos();
         lista.forEach(elemento => {
             containerVideos.appendChild(constroiCard(elemento.url, elemento.titulo, elemento.imagem, elemento.descricao))
         });
@@ -33,3 +38,30 @@ async function listaVideos() {
 }
 
 listaVideos();
+
+
+// Detectar clique no botão de pesquisa
+
+const botaoPesquisar = document.querySelector('[data-pesquisa-botao]');
+
+botaoPesquisar.addEventListener("click", (evento) => {
+    evento.preventDefault();
+
+    let termoDeBusca = document.querySelector('[data-pesquisa]').value;
+    buscarVideos(termoDeBusca);
+});
+
+// Buscar os vídeos na API e imprimir na tela
+
+async function buscarVideos(termoDeBusca) {
+    containerVideos.innerHTML = "";
+
+    try {
+        let listaVideosFiltrados = await conectaApi.buscaVideos(termoDeBusca);
+        listaVideosFiltrados.forEach(elemento => {
+            containerVideos.appendChild(constroiCard(elemento.url, elemento.titulo, elemento.imagem, elemento.descricao))
+        });
+    } catch {
+        containerVideos.innerHTML = "<h2 class='mensagem__titulo'>Não há vídeos com esse nome.</h2>"
+    }
+}

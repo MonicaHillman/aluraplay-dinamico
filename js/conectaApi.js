@@ -4,6 +4,12 @@ async function listaVideos() {
     return conexaoConvertido;
 }
 
+async function buscaVideos(termoDeBusca) {
+    const conexao = await fetch(`http://localhost:3000/videos?q=${termoDeBusca}`);
+    const conexaoConvertido = await conexao.json();
+    return conexaoConvertido;
+}
+
 async function criaVideos(url, titulo, visualizacao, imagem) {
 
     const conexao = await fetch('http://localhost:3000/videos', {
@@ -18,14 +24,17 @@ async function criaVideos(url, titulo, visualizacao, imagem) {
             imagem: imagem
         }),
     })
+
     if (!conexao.ok) {
         throw new Error('Não foi possível enviar o vídeo.')
     }
+
     const conexaoConvertido = await conexao.json();
     return conexaoConvertido;
 }
 
 export const conectaApi = {
+    buscaVideos,
     listaVideos,
     criaVideos
 }
