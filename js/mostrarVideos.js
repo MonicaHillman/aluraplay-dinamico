@@ -56,12 +56,13 @@ botaoPesquisar.addEventListener("click", (evento) => {
 async function buscarVideos(termoDeBusca) {
     containerVideos.innerHTML = "";
 
-    try {
-        let listaVideosFiltrados = await conectaApi.buscaVideos(termoDeBusca);
-        listaVideosFiltrados.forEach(elemento => {
-            containerVideos.appendChild(constroiCard(elemento.url, elemento.titulo, elemento.imagem, elemento.descricao))
-        });
-    } catch {
+
+    let listaVideosFiltrados = await conectaApi.buscaVideos(termoDeBusca);
+    listaVideosFiltrados.forEach(elemento => {
+        containerVideos.appendChild(constroiCard(elemento.url, elemento.titulo, elemento.imagem, elemento.descricao))
+    });
+
+    if (listaVideosFiltrados.length == 0) {
         containerVideos.innerHTML = "<h2 class='mensagem__titulo'>Não há vídeos com esse nome.</h2>"
     }
 }
